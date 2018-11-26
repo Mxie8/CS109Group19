@@ -31,7 +31,8 @@ def get_features(songs):
 	# print(d["audio-features"])
 	# data = json.loads(r.json())
 	# print(data)
-	write_data(data["audio_features"], 'features.csv')
+    # write_data(data["audio_features"], 'features.csv')
+	return data["audio_features"]
 	# print(r.text)
 
 def get_token():
@@ -58,4 +59,4 @@ def get_playlist_songs(playlist):
 
 # get_token()
 # get_features('4rMhnUBc5KjVa8oaj2mynQ')
-get_playlist_songs("37i9dQZEVXbLRQDuF5jeBp")
+#get_playlist_songs("37i9dQZEVXbLRQDuF5jeBp")
