@@ -27,11 +27,8 @@ def get_features(songs):
 	# r =requests.post(url, headers=headers, data=payload)
 	r =requests.get(url, headers=headers, params=payload)
 	data = r.json()
-	# print(d.keys())
-	# print(d["audio-features"])
-	# data = json.loads(r.json())
-	# print(data)
-    # write_data(data["audio_features"], 'features.csv')
+	print(data)
+
 	return data["audio_features"]
 	# print(r.text)
 
@@ -57,6 +54,6 @@ def get_playlist_songs(playlist):
 	print(get_features(song_ids))
 	# print(r.text)
 
-# get_token()
+get_token()
 # get_features('4rMhnUBc5KjVa8oaj2mynQ')
 #get_playlist_songs("37i9dQZEVXbLRQDuF5jeBp")
